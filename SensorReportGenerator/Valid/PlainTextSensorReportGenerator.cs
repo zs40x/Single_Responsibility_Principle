@@ -3,27 +3,25 @@ using System.IO;
 
 namespace SensorReportGenerator.Valid
 {
-    public class PlainTextSensorReportGenerator : ISensorReportGenerator
+    public class PlainTextSensorReportGenerator : ISensorReportContentGenerator
     {
-        private readonly IFilesystem _filesystem;
+        private readonly Sensor _sensor;
 
-        public PlainTextSensorReportGenerator(IFilesystem filesystem)
+        public PlainTextSensorReportGenerator(Sensor sensor)
         {
-            _filesystem = filesystem;
+            _sensor = sensor;
         }
 
-        public void GenerateReport(Sensor sensor, string reportFile)
-        {
-            _filesystem.WriteContentToFile(reportFile, ToFileContent(sensor));
-        }
+        public string GetContent()
+            => ToFileContent();
 
-        private string ToFileContent(Sensor sensor)
+        private string ToFileContent()
         {
             var fileContent =
-                $"#SensorInfo#Name:{sensor.Name};Average:{sensor.AverageValue};"
-                + $"Minimum:{sensor.MinimumValue};Maximum:{sensor.MaximumValue}";
+                $"#SensorInfo#Name:{_sensor.Name};Average:{_sensor.AverageValue};"
+                + $"Minimum:{_sensor.MinimumValue};Maximum:{_sensor.MaximumValue}";
 
-            sensor.MeasuredValues.ForEach(
+            _sensor.MeasuredValues.ForEach(
                 value => fileContent += $@"{Environment.NewLine}##{value}"
                 );
 

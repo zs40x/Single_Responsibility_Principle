@@ -46,9 +46,10 @@
     <Compile Include="Application.cs" />
     <Compile Include="Valid\FileSystem.cs" />
     <Compile Include="Valid\IFilesystem.cs" />
-    <Compile Include="Valid\ISensorReportGenerator.cs" />
+    <Compile Include="Valid\ISensorReportContentGenerator.cs" />
     <Compile Include="Valid\PlainTextSensorReportGenerator.cs" />
     <Compile Include="Valid\Sensor.cs" />
+    <Compile Include="Valid\SensorReportGenerator.cs" />
     <Compile Include="Violation\Sensor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
