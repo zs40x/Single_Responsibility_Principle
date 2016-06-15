@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SensorReportGenerator.Valid.FileSystem" BaseTypeListCollapsed="true">
-    <Position X="4" Y="3" Width="1.5" />
+    <Position X="4" Y="1.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Valid\FileSystem.cs</FileName>
@@ -9,32 +9,39 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SensorReportGenerator.Valid.PlainTextSensorReportGenerator" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="3" Width="1.5" />
+    <Position X="4" Y="4" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Valid\PlainTextSensorReportGenerator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SensorReportGenerator.Valid.Sensor">
-    <Position X="0.5" Y="1" Width="1.5" />
+    <Position X="1" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAEQAAAAAAAAAEAAAAQAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Valid\Sensor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="SensorReportGenerator.Valid.IFilesystem">
-    <Position X="4" Y="1.25" Width="1.5" />
+  <Class Name="SensorReportGenerator.Valid.SensorReportGenerator">
+    <Position X="0.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Valid\SensorReportGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SensorReportGenerator.Valid.IFilesystem" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Valid\IFilesystem.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SensorReportGenerator.Valid.ISensorReportGenerator">
-    <Position X="2.25" Y="1.25" Width="1.5" />
+  <Interface Name="SensorReportGenerator.Valid.ISensorReportContentGenerator" Collapsed="true">
+    <Position X="3.5" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Valid\ISensorReportGenerator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Valid\ISensorReportContentGenerator.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
